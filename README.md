@@ -7,6 +7,9 @@ Vagrantを用いてローカル開発環境を作成する際に
 
 ## ミドルウェア
 
+
+- VirtualBox : 5.1.22
+- Vagrant : 1.9.4
 - Vagrant Box : bento/centos-6.8
 - Ruby : 2.2.0
 - Rails : 4.2.0
