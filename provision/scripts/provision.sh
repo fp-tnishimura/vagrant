@@ -1,13 +1,10 @@
-#!/usr/bin/env bash
+# Ruby
 
-rbenvdir=~/.rbenv
-rbenvdir=~/.rbenv/plugins/ruby-build
-
-echo 'start setup'
-sudo yum -y install git
-
-echo 'start setup rbenv'
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-exec $SHELL
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+source ~/.bash_profile
+
+rbenv install 2.2.2
+rbenv global 2.2.2
