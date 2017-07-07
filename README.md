@@ -16,16 +16,16 @@ Vagrantを用いてローカル開発環境を作成する際に
 
 ## 導入
 
-'''shell
+```shell
 git https://fp-tnishimura/vagrant
 vagrant up
 vagrant provision
-'''
+```
 
-
-'''shell
+```shell
 vagrant ssh
 gem install rails --version="4.2.0"
-'''
+```
+
 
 以上。
