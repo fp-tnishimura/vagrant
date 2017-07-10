@@ -10,3 +10,7 @@ yum install -y readline-devel
 yum install -y zlib-devel
 yum install -y gdbm-devel
 yum install -y ncurses-devel
+
+# for bundle install
+yum install -y sqlite-devel
+yum install -y ruby20-devel gcc-c++

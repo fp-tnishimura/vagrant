@@ -7,6 +7,8 @@
 # you're doing.
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/centos-6.8"
+
+  config.vm.network :forwarded_port, guest: 3000, host: 3001
   config.vm.network "private_network", ip: "192.168.33.10"
 
   # provision for ruby on rails
